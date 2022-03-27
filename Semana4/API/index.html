@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="fondo">
+    <section class="container-ovalo">
+        <section>
+            <span class="ovalo"></span>
+            <span class="sombra"></span>
+        </section>
+    </section>
+    <div class="mx-auto ">
+        <div class="max-w-lg mx-auto">
+            <div id="contenedor" class="contenedor">
+                <section class="contenedor-poke">
+                    <img class="img-logo" src="img/pokemon.png" width="100%">
+                    <section class="container-card">
+                        <section class="card-img-poke">
+                            <section class="img-poke">
+                                <img id="pokeImg" class="pokeImg">
+                                
+                            </section>
+                        </section>
+                        <div class="card">
+                            <img id="pokeImg" class="pokeImg" style="position: absolute;">
+                            <div class="p-6 mt-10">
+                                <div id="app">
+                                    <p class="text-center" style="font-size: larger; color: black;">Información del Pokemón</p>
+                                </div>
+                            </div>
+                        </div> <!--.card-->
+                    </section>
+                </section>
+                <section class="search-poke d-grid gap-2">
+                    <div>
+                        <input type="text" name="pokeName" id="pokeName" placeholder="Pokescribe tu pokemon"
+                            class="p-2 rounded" />
+                    </div>
+                    <button type="button" id="searchPokemon"
+                        class="bg-yellow-500 p-2 uppercase font-bold cursor-pointer rounded btn-sh">Buscar Pokemon</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/pokedex.js"></script>
+</body>
+
+</html>
